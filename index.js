@@ -24,17 +24,16 @@ function best(except) {
         }
         scored.push({ word, score });
     });
-    return scored.sort((a, b) => b.score - a.score)[0].word;
+    return scored.sort((a, b) => b.score - a.score)[0];
 }
 
-const best1 = best();
-const best2 = best(best1);
-const best3 = best(best1 + best2);
+let used = '';
+for (let i = 0; i < 20; i++) {
+    const c = best(used);
+    if (c.score) console.log(unscramble(c.word) + ':', c.score);
+    used += c.word;
+}
 
 function unscramble(w) {
     return w[2] + w[1] + w[3] + w[0] + w[4];
 }
-
-console.log(unscramble(best1), unscramble(best2), unscramble(best3));
-
-// later sonic dumpy
