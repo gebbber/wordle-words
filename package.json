@@ -1,0 +1,19 @@
+{
+  "name": "best-wordle-words",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gebbber/best-wordle-words.git"
+  },
+  "author": "Gregory Everett Brandon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gebbber/best-wordle-words/issues"
+  },
+  "homepage": "https://github.com/gebbber/best-wordle-words#readme"
+}
